@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ejercicio No.2 &#8212; Ejercicio No. 2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Ejercicio 2" href="Ejercicio_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ejercicio No. 2 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Ejercicio No. 2 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Ejercicio No.2
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Ejercicio_2.html">Ejercicio 2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ejercicio No.2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ejercicio-no-2">
+<h1>Ejercicio No.2<a class="headerlink" href="#ejercicio-no-2" title="Link to this heading">#</a></h1>
+<p>Ejercicio para entregar</p>
+<ol class="arabic simple">
+<li><p>El siguiente informe debe ser presentado usando Jupyter Book. Por lo tanto, la entrega realizada corresponde a un link de una página de GitHub similar a la del presente curso. Debe crear una conexión con pgAdmin para mostrar las tablas creadas, agregar imágenes.</p></li>
+<li><p>Crear una instancia de base de datos en Docker la cual utilizará para la solución de los siguientes ejercicios. Luego de finalizar con cada una de las consultas requeridas, deberá exportar la imagen de la base de datos a un archivo nombrado como, primernombre_primerapellido_imagendocker.tar, ejemplo: lihki_rubio_imagendocker.tar.</p></li>
+<li><p>La imagen Docker y la base de datos que debe crear debe contar con la siguiente información de conexión. Nótese que debe usar la contraseña password.</p></li>
+</ol>
+<p>Host: localhost</p>
+<p>Port: 5342</p>
+<p>Database Name: myname_db</p>
+<p>User Name: myname_user</p>
+<p>Password: password</p>
+<ol class="arabic simple" start="4">
+<li><p>Cada una de las siguientes consultas deben ser realizadas desde Python usando la API psycopg2. Por lo tanto, debe crear una conexión y un cursor previamente para realizar cada una de las siguientes consultas:</p></li>
+</ol>
+<p>I) Crear la tabla nombrada: employees y explicar que tarea realiza la consulta realizada y mostrar en pantalla la tabla</p>
+<p>CREATE TABLE employees
+( employee_id INTEGER
+, first_name VARCHAR(20)
+, last_name VARCHAR(25)
+, email VARCHAR(25)
+, phone_number VARCHAR(20)
+, hire_date DATE
+, job_id VARCHAR(10)
+, salary NUMERIC(8,2)
+, commission_pct NUMERIC(2,2)
+, manager_id INTEGER
+, department_id INTEGER
+) ;
+CREATE UNIQUE INDEX emp_emp_id_pk
+ON employees (employee_id) ;
+ALTER TABLE employees ADD
+PRIMARY KEY (employee_id);
+SELECT * FROM employees LIMIT 10;
+SELECT count(1) FROM employees;
+II) Crear la tabla courses con las siguientes columnas:</p>
+<p>course_id - integer y primary key</p>
+<p>course_name - valores alfanuméricos o de cadena de hasta 60 caracteres</p>
+<p>course_author - nombre del autor de hasta 40 caracteres</p>
+<p>course_status - published, draft, inactive.</p>
+<p>course_published_dt - valor de tipo fecha.</p>
+<p>III) Insertar datos</p>
+<p>Inserte los datos en courses utilizando los datos proporcionados. Asegúrese de que el id es generado por el sistema. No olvide refrescar la información de la base de datos.</p>
+<p>_images/tableforexercise_python.png
+Fig. 79 Filas a insertar en la tabla courses</p>
+<p>IV) Borre todos los cursos que no estén en modo borrador ni publicados. Proporcione la sentencia de borrado como respuesta para este ejercicio en el Jupyter Book. Para validar, obtenga el recuento de todos los cursos publicados por autor y asegúrese de que la salida está ordenada en forma descendente por recuento.</p>
+<p>VI) Crear la base de datos users</p>
+<p>CREATE TABLE users(
+user_id SERIAL PRIMARY KEY,
+user_first_name VARCHAR(30),
+user_last_name VARCHAR(30),
+user_email_id VARCHAR(50),
+user_gender VARCHAR(1),
+user_unique_id VARCHAR(15),
+user_phone_no VARCHAR(20),
+user_dob DATE,
+created_ts TIMESTAMP
+)
+Inserte los siguientes valores</p>
+<p>insert into users (
+user_first_name, user_last_name, user_email_id, user_gender,
+user_unique_id, user_phone_no, user_dob, created_ts
+) VALUES
+(‘Giuseppe’, ‘Bode’, ‘gbode0&#64;imgur.com’, ‘M’, ‘88833-8759’,
+‘+86 (764) 443-1967’, ‘1973-05-31’, ‘2018-04-15 12:13:38’),
+(‘Lexy’, ‘Gisbey’, ‘lgisbey1&#64;mail.ru’, ‘F’, ‘262501-029’,
+‘+86 (751) 160-3742’, ‘2003-05-31’, ‘2020-12-29 06:44:09’),
+(‘Karel’, ‘Claringbold’, ‘kclaringbold2&#64;yale.edu’, ‘F’, ‘391-33-2823’,
+‘+62 (445) 471-2682’, ‘1985-11-28’, ‘2018-11-19 00:04:08’),
+(‘Marv’, ‘Tanswill’, ‘mtanswill3&#64;dedecms.com’, ‘F’, ‘1195413-80’,
+‘+62 (497) 736-6802’, ‘1998-05-24’, ‘2018-11-19 16:29:43’),
+(‘Gertie’, ‘Espinoza’, ‘gespinoza4&#64;nationalgeographic.com’, ‘M’, ‘471-24-6869’,
+‘+249 (687) 506-2960’, ‘1997-10-30’, ‘2020-01-25 21:31:10’),
+(‘Saleem’, ‘Danneil’, ‘sdanneil5&#64;guardian.co.uk’, ‘F’, ‘192374-933’,
+‘+63 (810) 321-0331’, ‘1992-03-08’, ‘2020-11-07 19:01:14’),
+(‘Rickert’, ‘O’’Shiels’, ‘roshiels6&#64;wikispaces.com’, ‘M’, ‘749-27-47-52’,
+‘+86 (184) 759-3933’, ‘1972-11-01’, ‘2018-03-20 10:53:24’),
+(‘Cybil’, ‘Lissimore’, ‘clissimore7&#64;pinterest.com’, ‘M’, ‘461-75-4198’,
+‘+54 (613) 939-6976’, ‘1978-03-03’, ‘2019-12-09 14:08:30’),
+(‘Melita’, ‘Rimington’, ‘mrimington8&#64;mozilla.org’, ‘F’, ‘892-36-676-2’,
+‘+48 (322) 829-8638’, ‘1995-12-15’, ‘2018-04-03 04:21:33’),
+(‘Benetta’, ‘Nana’, ‘bnana9&#64;google.com’, ‘M’, ‘197-54-1646’,
+‘+420 (934) 611-0020’, ‘1971-12-07’, ‘2018-10-17 21:02:51’),
+(‘Gregorius’, ‘Gullane’, ‘ggullanea&#64;prnewswire.com’, ‘F’, ‘232-55-52-58’,
+‘+62 (780) 859-1578’, ‘1973-09-18’, ‘2020-01-14 23:38:53’),
+(‘Una’, ‘Glayzer’, ‘uglayzerb&#64;pinterest.com’, ‘M’, ‘898-84-336-6’,
+‘+380 (840) 437-3981’, ‘1983-05-26’, ‘2019-09-17 03:24:21’),
+(‘Jamie’, ‘Vosper’, ‘jvosperc&#64;umich.edu’, ‘M’, ‘247-95-68-44’,
+‘+81 (205) 723-1942’, ‘1972-03-18’, ‘2020-07-23 16:39:33’),
+(‘Calley’, ‘Tilson’, ‘ctilsond&#64;issuu.com’, ‘F’, ‘415-48-894-3’,
+‘+229 (698) 777-4904’, ‘1987-06-12’, ‘2020-06-05 12:10:50’),
+(‘Peadar’, ‘Gregorowicz’, ‘pgregorowicze&#64;omniture.com’, ‘M’, ‘403-39-5-869’,
+‘+7 (267) 853-3262’, ‘1996-09-21’, ‘2018-05-29 23:51:31’),
+(‘Jeanie’, ‘Webling’, ‘jweblingf&#64;booking.com’, ‘F’, ‘399-83-05-03’,
+‘+351 (684) 413-0550’, ‘1994-12-27’, ‘2018-02-09 01:31:11’),
+(‘Yankee’, ‘Jelf’, ‘yjelfg&#64;wufoo.com’, ‘F’, ‘607-99-0411’,
+‘+1 (864) 112-7432’, ‘1988-11-13’, ‘2019-09-16 16:09:12’),
+(‘Blair’, ‘Aumerle’, ‘baumerleh&#64;toplist.cz’, ‘F’, ‘430-01-578-5’,
+‘+7 (393) 232-1860’, ‘1979-11-09’, ‘2018-10-28 19:25:35’),
+(‘Pavlov’, ‘Steljes’, ‘psteljesi&#64;macromedia.com’, ‘F’, ‘571-09-6181’,
+‘+598 (877) 881-3236’, ‘1991-06-24’, ‘2020-09-18 05:34:31’),
+(‘Darn’, ‘Hadeke’, ‘dhadekej&#64;last.fm’, ‘M’, ‘478-32-02-87’,
+‘+370 (347) 110-4270’, ‘1984-09-04’, ‘2018-02-10 12:56:00’),
+(‘Wendell’, ‘Spanton’, ‘wspantonk&#64;de.vu’, ‘F’, null,
+‘+84 (301) 762-1316’, ‘1973-07-24’, ‘2018-01-30 01:20:11’),
+(‘Carlo’, ‘Yearby’, ‘cyearbyl&#64;comcast.net’, ‘F’, null,
+‘+55 (288) 623-4067’, ‘1974-11-11’, ‘2018-06-24 03:18:40’),
+(‘Sheila’, ‘Evitts’, ‘sevittsm&#64;webmd.com’, null, ‘830-40-5287’,
+null, ‘1977-03-01’, ‘2020-07-20 09:59:41’),
+(‘Sianna’, ‘Lowdham’, ‘slowdhamn&#64;stanford.edu’, null, ‘778-0845’,
+null, ‘1985-12-23’, ‘2018-06-29 02:42:49’),
+(‘Phylys’, ‘Aslie’, ‘paslieo&#64;qq.com’, ‘M’, ‘368-44-4478’,
+‘+86 (765) 152-8654’, ‘1984-03-22’, ‘2019-10-01 01:34:28’)
+VII) Obtenga el número de usuarios creados por año. Utilice la tabla de usuarios para este ejercicio.</p>
+<p>La salida debe contener el año de 4 dígitos y el recuento.</p>
+<p>Use funciones específicas de fecha para obtener el año usando created_ts.</p>
+<p>Asegúrese de definir alias a las columnas como created_year y user_count respectivamente.</p>
+<p>Los datos deben ordenarse de forma ascendente por created_year.</p>
+<p>Cuando ejecutes la consulta usando el entorno Jupyter, puede que tenga decimales para los enteros. Por lo tanto, puede mostrar los resultados incluso con decimales.</p>
+<p>_images/outputexercisevii_python.png
+Fig. 80 Ejemplo de salida que debe obtener a partir de este ejercicio.</p>
+<p>VIII) Obtenga los días de nacimiento de todos los usuarios nacidos en el mes May.</p>
+<p>Utilice la tabla users para este ejercicio.</p>
+<p>La salida debe contener user_id, user_dob, user_email_id y user_day_of_birth.</p>
+<p>Utilice funciones específicas de fecha para obtener el mes utilizando user_dob.</p>
+<p>user_day_of_birth debe ser un día completo con el primer carácter en mayúsculas, por ejemplo Tuesday.</p>
+<p>Los datos deben ordenarse por día dentro del mes May.</p>
+<p>_images/maybirths_exercise.png
+Fig. 81 Ejemplo de salida para nacimientos en el mes de mayo.</p>
+<p>IX) Obtenga los nombres e ids de correo electrónico de los usuarios añadidos en el año 2019.</p>
+<p>Utilice la tabla users para este ejercicio.</p>
+<p>La salida debe contener user_id, user_name, user_email_id, created_ts, created_year.</p>
+<p>Utilice funciones específicas de fecha para obtener el año utilizando created_ts.</p>
+<p>user_name es una columna derivada de concatenar user_first_name y user_last_name con un espacio en medio.</p>
+<p>user_name debe tener valores en mayúsculas.</p>
+<p>Los datos deben ordenarse en forma ascendente por user_name</p>
+<p>_images/usernameorder_exercise.png
+Fig. 82 Ejemplo de salida para nombres, ids, correo electrónico y fechas.</p>
+<p>X) Obtenga el número de usuarios por género. Utilice la tabla de users para este ejercicio.</p>
+<p>La salida debe contener el gender y user_count.</p>
+<p>Para los hombres la salida debe mostrar Male y para las mujeres la salida debe mostrar Female.</p>
+<p>Si no se especifica el sexo, se mostrará Not Specified</p>
+<p>Los datos deben ordenarse en forma descendente por user_count.</p>
+<p>_images/outputexercisex_python.png
+Fig. 83 Ejemplo de salida para el ejercicio X.</p>
+<p>XII) Obtenga los 4 últimos dígitos de los ids únicos.</p>
+<p>Utilice la tabla users para este ejercicio.</p>
+<p>El resultado debe contener user_id, user_unique_id y user_unique_id_last4.</p>
+<p>Los identificadores únicos son null o not null.</p>
+<p>Los identificadores únicos contienen números y guiones y son de diferente longitud.</p>
+<p>Necesitamos obtener los últimos 4 dígitos descartando los guiones sólo cuando el número de dígitos es al menos 9.</p>
+<p>Si el identificador único es nulo, debe mostrarse Not Specified.</p>
+<p>Después de descartar los guiones, si el identificador único tiene menos de 9 dígitos, debe mostrar Invalid Unique Id.</p>
+<p>Los datos deben ordenarse por user_id. Es posible que aparezca None o null para aquellos identificadores de usuario en los que no haya un identificador único para user_unique_id.</p>
+<p>_images/exercisexii_python.png
+Fig. 84 Ejemplo de output para Ejercicio XII.</p>
+<p>XIII) Obtenga el recuento de usuarios en función del código de país.</p>
+<p>Utilice la tabla users para este ejercicio.</p>
+<p>La salida debe contener el código de país y el recuento.</p>
+<p>No debe haber ningún + en el código de país. Sólo debe contener dígitos.</p>
+<p>Los datos deben ordenarse como números por código de país.</p>
+<p>Debemos descartar user_phone_no con valores null.</p>
+<p>_images/usercountexercisexiii_python.png
+Fig. 85 Ejemplo de output para ejercicio de recuento de usuarios en función del código de país.</p>
+<ol class="arabic simple" start="5">
+<li><p>Importe los datos del precio de Cardano USD (ADA-USD) en su instancia de base de datos Docker, teniendo en cuenta lo explicado durante esta sección. Luego dibuje un gráfico de candlestick para la criptomoneda. En el siguiente link encontrará el CSV de Cardano: Cardano USD (ADA-USD). Describa lo que puede observar en la serie de tiempo. Realice un análisis exploratorio de datos (EDA) para la serie de tiempo.</p></li>
+</ol>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Ejercicio_2.html">Ejercicio 2</a></li>
+</ul>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="Ejercicio_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ejercicio 2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lisa Puche - Andrés Vargas
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
